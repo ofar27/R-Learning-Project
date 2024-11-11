@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résumé R</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .highlight {
+            background-color: #e7f7ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Résumé des Premiers Pas en R</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Concept</th>
+                <th>Détail / Explication</th>
+                <th>Exemple</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="highlight">
+                <td><b>Création d'objets</b></td>
+                <td>Utilisation de <code><-</code> ou <code>=</code> pour assigner des valeurs à une variable.</td>
+                <td><code>a <- 10</code></td>
+                <td>Variable simple</td>
+            </tr>
+            <tr>
+                <td><b>Vecteurs</b></td>
+                <td>Vecteur : collection d'éléments. Utilisation de <code>c()</code> pour créer un vecteur.</td>
+                <td><code>my_vector <- c(1, 2, 3, 4, 5)</code></td>
+                <td>Vecteur numérique</td>
+            </tr>
+            <tr class="highlight">
+                <td><b>Séquences</b></td>
+                <td>Utilisation des deux-points <code>:</code> pour générer une séquence de nombres.</td>
+                <td><code>my_seq <- 1:10</code></td>
+                <td>Vecteur entier (integer)</td>
+            </tr>
+            <tr>
+                <td><b>Matrices</b></td>
+                <td>Structure de données bidimensionnelle avec <code>matrix()</code>.</td>
+                <td><code>my_matrix <- matrix(1:9, nrow = 3, ncol = 3)</code></td>
+                <td>Matrice</td>
+            </tr>
+            <tr class="highlight">
+                <td><b>Fonction <code>tail()</code></b></td>
+                <td>Permet d'afficher les derniers éléments d'un vecteur, d'une matrice ou d'un autre objet.</td>
+                <td><code>tail(my_vector)</code></td>
+                <td>Fonction de manipulation</td>
+            </tr>
+            <tr>
+                <td><b>Accès aux éléments</b></td>
+                <td>Accéder à un élément particulier d'un vecteur ou d'une colonne d'un data frame avec l'indexation.</td>
+                <td><code>my_vector[1]</code> ou <code>data$colonne</code></td>
+                <td>Accès à un élément</td>
+            </tr>
+            <tr class="highlight">
+                <td><b>Type <code>numeric</code></b></td>
+                <td>Type de données par défaut pour les nombres (doubles).</td>
+                <td><code>a <- 1.5</code></td>
+                <td><code>numeric</code> ou <code>double</code></td>
+            </tr>
+            <tr>
+                <td><b>Type <code>integer</code></b></td>
+                <td>Spécification explicite d'un entier en utilisant <code>L</code> ou la fonction <code>as.integer()</code>.</td>
+                <td><code>a <- 5L</code> ou <code>b <- as.integer(3.7)</code></td>
+                <td><code>integer</code></td>
+            </tr>
+            <tr class="highlight">
+                <td><b>Conversion de types</b></td>
+                <td>Utilisation de <code>as.integer()</code> pour convertir en entier, ou <code>as.numeric()</code> pour le contraire.</td>
+                <td><code>a <- as.integer(3.7)</code></td>
+                <td>Conversion de types</td>
+            </tr>
+            <tr>
+                <td><b>Fonction <code>head()</code></b></td>
+                <td>Afficher les premiers éléments d'un objet (par défaut 6 premiers).</td>
+                <td><code>head(my_vector)</code></td>
+                <td>Fonction de manipulation</td>
+            </tr>
+            <tr class="highlight">
+                <td><b>Séquences avec <code>L</code></b></td>
+                <td>La notation <code>L</code> permet de créer directement des entiers sans conversion supplémentaire.</td>
+                <td><code>a <- 5L</code></td>
+                <td><code>integer</code></td>
+            </tr>
+            <tr>
+                <td><b>Manipulation de <code>data.frame</code></b></td>
+                <td>Accès à une colonne spécifique d'un <code>data.frame</code> via l'indexation ou <code>$</code>.</td>
+                <td><code>data$colonne</code> ou <code>data[, 1]</code></td>
+                <td><code>data.frame</code></td>
+            </tr>
+            <tr class="highlight">
+                <td><b>Fonction <code>typeof()</code></b></td>
+                <td>Vérifie le type de données d'un objet.</td>
+                <td><code>typeof(my_vector)</code></td>
+                <td>Fonction de vérification</td>
+            </tr>
+            <tr>
+                <td><b>Fonction <code>length()</code></b></td>
+                <td>Renvoie la longueur d'un vecteur, d'une liste ou d'une matrice.</td>
+                <td><code>length(my_vector)</code></td>
+                <td>Fonction de vérification</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
